@@ -1,38 +1,182 @@
-.App {
+body {
+  background-color: #f7f5e6;
+  color: #333;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+img {
+  width: 110px;
+  height: 110px;
+}
+
+h1 {
+  color: #b5994b;
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+p {
+  line-height: 1.5;
+  margin-bottom: 10px;
+}
+
+a {
+  color: #f5c12e;
+  text-decoration: none;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+a:hover {
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+button {
+  background-color: #f5c12e;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 4px;
+  height: 60px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+button:hover {
+  background-color: #f3b30d;
+}
+
+input[type="text"] {
+  padding: 8px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin: 8px;
+  width: 180px;
+}
+
+input[type="submit"] {
+  background-color: #f5c12e;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 4px;
+}
+
+input[type="submit"]:hover {
+  background-color: #f3b30d;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 120px 1fr; /* Primeira coluna com 100px e a segunda ocupa o restante do espaço disponível */
+  grid-template-rows: 100vh; /* Altura total da janela */
+}
+
+.menu {
+  grid-column: 1; /* Ocupa a primeira coluna */
+  grid-row: 1; /* Ocupa a primeira linha */
+  background-color: #b4b638;
   display: flex;
   flex-direction: column;
+  gap: 5px;
+  padding: 5px;
+}
+
+.btn {
+  background-color: #f5c12e;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 4px;
+  height: 40px;
+}
+
+.links {
+  background-color: #f5c12e;
+  border: 1px solid;
+  color: #fff;
+  cursor: pointer;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 4px;
+  height: 40px;
+  display: flex;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.links:hover {
+  background-color: #ac9a63;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.content {
+  text-align: center;
+
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; /* Adiciona alinhamento vertical no centro */
+  max-width: 500px;
+  margin: 0 auto;
+  padding-top: 20px;
+}
+
+.comment {
+  max-height: 100px; /* Define a altura máxima do comentário */
+  overflow-y: auto; /* Adiciona uma barra de rolagem vertical se necessário */
+
+  /* Estilos adicionais */
+  background-color: #d3d75d; /* Cor de fundo */
+  padding: 10px; /* Espaçamento interno */
+  border: 3px solid #859347; /* Borda fina */
+  border-radius: 5px; /* Cantos arredondados */
+}
+
+.span {
+  font-size: 1.1em;
+  font-weight: 700;
+  color: #756534;
+}
+
+.espaco {
+  padding: 15px;
+}
+
+img.small {
+  height: 50px;
+  width: 50px;
+}
+
+.tituloPlayerON {
+  color: #ae8a1d;
+}
+
+.playersOn {
+  color: #27ae1d;
+}
+
+.tituloWorld {
+  font-size: 1.2em;
+  color: #ae8a1d;
+  font-weight: 800;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+.grid-item {
+  background-color: #cec29d;
+  padding: 10px;
+  border: 2px solid #afb59a;
+}
+
+.scroll-container {
+  overflow: auto;
+  max-height: 500px; /* Altura máxima para exibir a barra de rolagem */
 }
