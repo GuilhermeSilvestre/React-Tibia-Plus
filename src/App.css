@@ -156,6 +156,8 @@ img.small {
 
 .playersOn {
   color: #27ae1d;
+  font-weight: 800;
+  font-size: 1.2em;
 }
 
 .tituloWorld {
@@ -179,4 +181,20 @@ img.small {
 .scroll-container {
   overflow: auto;
   max-height: 500px; /* Altura máxima para exibir a barra de rolagem */
+}
+
+.playerRank {
+  font-size: 1.4em;
+  color: #1d80ae;
+  font-weight: 800;
+}
+.rank {
+  font-size: 1.2em;
+  color: #636635;
+  font-weight: 800;
+}
+.level {
+  font-size: 1.1em;
+  color: #c06724;
+  font-weight: 800;
 }

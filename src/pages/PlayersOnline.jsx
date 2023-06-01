@@ -75,14 +75,14 @@ export default function PlayersOnline(props) {
       <div className="content">
         {erasebutton ? (
           <>
-            <h1> TIBIA PLUS </h1>
+            <h1> TIBIA PLUS - PLAYERS ONLINE</h1>
             <div>
               <img src={tibiaIcon} alt="tibia icon"></img>
             </div>
             <div className="espaco"></div>
             <button className="btn" onClick={() => handleButtonClick()}>
-              GO
-            </button>{" "}
+              PLAYERS ONLINE
+            </button>
           </>
         ) : null}
         {allplayers ? (

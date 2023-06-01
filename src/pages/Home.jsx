@@ -127,7 +127,6 @@ export default function Home(props) {
     <>
       <div className="content">
         <h1> TIBIA PLUS</h1>
-        <p> Find tibia players and statistics here!</p>
         <div>
           <img src={tibiaIcon} alt="tibia icon"></img>
         </div>
@@ -142,6 +141,7 @@ export default function Home(props) {
         <button className="btn" onClick={() => handleButtonClick(name)}>
           FIND
         </button>
+        <p> Find tibia players and statistics here!</p>
         {Object.keys(tibiadata).length !== 0 && tibiadata.level !== 0 ? (
           <>
             <CharCard
