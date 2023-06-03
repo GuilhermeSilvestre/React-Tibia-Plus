@@ -1,4 +1,4 @@
-# Tibia Plus versão react
+# Tibia Plus versão React
 
 https://tibiaturtle.netlify.app/
 
